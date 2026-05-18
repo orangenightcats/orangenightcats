@@ -878,13 +878,9 @@
     /* Section padding reduzieren */
     section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
   }
-  @media (max-width: 400px) {
-    /* Auf sehr kleinen Screens Galerie-Karte ausblenden */
+  @media (max-width: 320px) {
+    /* Nur auf sehr alten, sehr kleinen Geräten (z.B. iPhone SE 1. Gen) Galerie ausblenden */
     .hero-collage .hero-link:nth-child(3) { display: none !important; }
-    .hero-collage .hero-link:nth-child(1),
-    .hero-collage .hero-link:nth-child(2) {
-      grid-column: auto !important;
-    }
   }
 </style>
 </body>
